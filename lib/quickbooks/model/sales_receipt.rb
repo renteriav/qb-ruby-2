@@ -40,6 +40,7 @@ module Quickbooks
 
       xml_accessor :linked_transactions, :from => 'LinkedTxn', :as => [LinkedTransaction]
       xml_accessor :email_status, :from => 'EmailStatus'
+      xml_accessor :delivery_info, :from => 'DeliveryInfo', :as => DeliveryInfo
       xml_accessor :exchange_rate, :from => 'ExchangeRate', :as => BigDecimal, :to_xml => to_xml_big_decimal
 
       # readonly
